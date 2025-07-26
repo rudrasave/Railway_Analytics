@@ -1,71 +1,122 @@
-# Getting Started with Create React App
+# 🚂 Railway Revenue Analytics & User Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack Streamlit-based web application developed during my internship at **Western Railway – Zonal IT Centre, Churchgate, Mumbai**. This system is designed to assist with **revenue analytics**, **document management**, and **role-based user control** over freight data dashboards.
 
-## Available Scripts
+---
 
+## 🎯 Project Overview
+
+This project was built to support the **Indian Railways IT team** in analyzing apportioned freight revenue, automating data upload to Oracle DB, and managing user access securely.
+
+### 🔧 Modules & Features
+
+#### 📊 Revenue & Freight Data Analytics (Data Engineering + Visualization)
+- Multi-year trend analysis of commodity-wise freight revenue.
+- Dynamic visualization using **Plotly**, backed by **Oracle SQL queries**.
+- Year/month dropdowns for filtering, comparisons, and insights generation.
+
+#### 🔒 Role-Based User Management (Full-Stack Development)
+- Secure login/signup with **SHA256 password hashing**.
+- OTP-based password reset via **email (SMTP integration)**.
+- Admin access to assign roles (employee/admin) and control page-level access.
+
+#### 📁 Document Upload & Excel to Oracle Integration (Automation + Backend)
+- Users can upload, search, download, or delete documents via a Streamlit UI.
+- Uploaded Excel sheets are **automatically parsed**, **table structures inferred**, and **tables created in Oracle DB**.
+- Handles type inference (DATE, NUMBER, VARCHAR) and bulk inserts.
+
+---
+
+## 💻 Tech Stack
+
+- **Frontend**: Streamlit, HTML/CSS Custom Styling
+- **Backend**: Python (Pandas, Regex, Oracledb), Oracle SQL
+- **Data Viz**: Plotly, Matplotlib, Seaborn
+- **Security**: Hashlib, Email OTP (SMTP), Session State
+- **Other**: File handling, Regex, SQL templating
+
+---
+
+## 📁 Project Structure
+
+├── app.py # Entry point - dashboard logic
+├── Login_user_management.py # User authentication and permission control
+├── Document.py # Document manager and Excel-to-Oracle automation
+├── page1.py - page4.py # Various revenue analytics pages
+├── queries.txt # SQL logic templates
+├── testquery.py # DB credentials and constants
+
+---
+
+## 📜 Certificate
+
+> Internship completed under **Zonal IT Centre, Western Railway**  
+> Duration: **30 June 2025 – 25 July 2025**  
+> Role: **Intern – Software Developer & Data Analyst**  
+>  
+> ✅ [View Certificate PDF](link-to-certificate)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Oracle Instant Client
+- Python 3.8+
+- Required packages:
+  ```bash
+  pip install streamlit oracledb pandas plotly openpyxl
+Setup Instructions
+Clone the repo:
+
+git clone https://github.com/your-username/railway-analytics.git
+cd railway-analytics
+Add your Oracle DB credentials in testquery.py.
+
+Start the app:
+
+streamlit run app.py
+⚙️ React App Setup (If Applicable)
+This project uses Create React App for front-end setup (if running alongside a React UI).
+
+Available Scripts
 In the project directory, you can run:
 
-### `npm start`
+npm start
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in your browser.
+The page will reload if you make edits. You may also see lint errors in the console.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+npm test
+Launches the test runner in the interactive watch mode.
+See more in the testing documentation.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
+npm run build
+Builds the app for production to the build folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
+The build is minified, and filenames include hashes.
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm run eject
+Note: this is a one-way operation. Once you eject, you can’t go back!
+Ejecting gives you full control over the config files (Webpack, Babel, ESLint, etc.)
 
-### `npm run eject`
+📚 Learn More
+Create React App Docs
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+React Docs
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Code Splitting
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Analyzing the Bundle Size
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Progressive Web App
 
-## Learn More
+Deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Build Fails to Minify
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# test elvis
+📬 Connect With Me
+LinkedIn: Your LinkedIn Profile
