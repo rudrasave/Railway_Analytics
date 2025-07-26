@@ -1,0 +1,89 @@
+.home-container {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ef 100%);
+  min-height: 100vh;
+  padding: 0;
+}
+
+.hero {
+  text-align: center;
+  padding: 6rem 2rem 3rem 2rem;
+  background: linear-gradient(120deg, #4f8cff 0%, #235390 100%);
+  color: #fff;
+  border-radius: 0 0 2.5rem 2.5rem;
+  box-shadow: 0 6px 32px rgba(79, 140, 255, 0.10);
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 1.35rem;
+  margin-bottom: 2.2rem;
+  color: #e0e7ef;
+  font-weight: 400;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: #fff;
+  color: #235390;
+  font-weight: 700;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-size: 1.15rem;
+  box-shadow: 0 2px 12px rgba(79, 140, 255, 0.10);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  letter-spacing: 0.5px;
+}
+
+.cta-button:hover {
+  background: #235390;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(35, 83, 144, 0.18);
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 4rem auto 0 auto;
+  max-width: 1100px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 24px rgba(35, 83, 144, 0.09);
+  padding: 2.2rem 1.7rem;
+  flex: 1 1 260px;
+  min-width: 260px;
+  max-width: 340px;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.feature-card:hover {
+  box-shadow: 0 8px 32px rgba(35, 83, 144, 0.13);
+  transform: translateY(-4px) scale(1.03);
+}
+
+.feature-card h2 {
+  color: #235390;
+  font-size: 1.25rem;
+  margin-bottom: 0.7rem;
+  font-weight: 700;
+}
+
+.feature-card p {
+  color: #4f5d75;
+  font-size: 1.05rem;
+  font-weight: 400;
+} 

@@ -1,0 +1,80 @@
+.about-container {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ef 100%);
+  min-height: 100vh;
+  padding: 0;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 5rem 2rem 2.5rem 2rem;
+  background: linear-gradient(120deg, #235390 0%, #4f8cff 100%);
+  color: #fff;
+  border-radius: 0 0 2.5rem 2.5rem;
+  box-shadow: 0 6px 32px rgba(35, 83, 144, 0.10);
+}
+
+.about-hero h1 {
+  font-size: 2.7rem;
+  font-weight: 800;
+  margin-bottom: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.about-subtitle {
+  font-size: 1.18rem;
+  color: #e0e7ef;
+  font-weight: 400;
+}
+
+.about-content {
+  max-width: 1000px;
+  margin: 4rem auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+.about-story, .about-mission, .about-team {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 24px rgba(35, 83, 144, 0.09);
+  padding: 2.2rem 1.7rem;
+  flex: 1 1 260px;
+  min-width: 260px;
+  max-width: 340px;
+  margin-bottom: 2.5rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.about-story:hover, .about-mission:hover, .about-team:hover {
+  box-shadow: 0 8px 32px rgba(35, 83, 144, 0.13);
+  transform: translateY(-4px) scale(1.03);
+}
+
+.about-story h2, .about-mission h2, .about-team h2 {
+  color: #235390;
+  font-size: 1.18rem;
+  margin-bottom: 0.7rem;
+  font-weight: 700;
+}
+
+.about-story p, .about-mission p {
+  color: #4f5d75;
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.about-team ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-team li {
+  color: #4f5d75;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+} 
