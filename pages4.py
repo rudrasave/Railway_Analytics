@@ -1,4 +1,5 @@
 import streamlit as st
+
 import pandas as pd
 import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
@@ -681,5 +682,6 @@ fig_line.update_layout(
     plot_bgcolor='rgba(0,0,0,0)',
     legend_title="Commodity"
 )
+
 
 st.plotly_chart(fig_line, use_container_width=True)
